@@ -68,7 +68,17 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             // Adjust hero padding on scroll IF header height changes significantly
             // This is important if the CSS transitions header height
-            adjustHeroPadding(); 
+            adjustHeroPadding();
+
+            // Switch logo image based on scroll position
+            const logoImg = header.querySelector('.logo-img');
+            if (logoImg) {
+                if (scrollPosition > 50) {
+                    logoImg.src = 'aboh-logo-inverted.png';
+                } else {
+                    logoImg.src = 'aboh-logo.png';
+                }
+            }
         }
 
 
