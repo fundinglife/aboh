@@ -107,7 +107,7 @@ a:hover {
     transition: filter 0.4s ease;
 }
 #main-header.top-of-page .logo-img {
-    filter: brightness(0) invert(1); /* Makes dark logo white */
+    /* filter: brightness(0) invert(1); */
 }
 #main-header.scrolled .logo-img {
     filter: none;
